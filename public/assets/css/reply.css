@@ -1,0 +1,214 @@
+
+.tweet-reply-container {
+    position: absolute;
+    width: 600px;
+    min-height: 300px;
+    height: auto;
+    z-index: 1;
+    background-color: #fff;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-reply-header {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+}
+
+
+.tweet-reply-exit {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.tweet-reply-exit:hover {
+    background-color: var(--twitter-background);
+    cursor: pointer;
+}
+
+.tweet-reply_body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.tweet-reply_box {
+    padding: 0 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-reply-box-spec {
+    min-height: 10px;
+    padding: 12px 0 0;
+}
+
+.tweet-reply-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.tweet-reply-box-avatar {
+    height: auto;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-reply-box-avatar-main {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+
+.tweet-reply-box-avatar-main img {
+    border-radius: 50%;
+}
+
+
+.tweet-reply-box-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-left: 12px;
+}
+
+.tweet-reply-box-desc-header {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.tweet-reply-box-desc-header span, .tweet-reply--box-desc--header p {
+    padding-left: 5px;
+    color: #536471;
+}
+
+.tweet-reply-box-desc-main {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    color: #0f1419;
+    padding-top: 5px;
+}
+
+.tweet-reply-replying {
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tweet-reply-replying-left {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 100%;
+    background: #CFD9DE;
+}
+
+.tweet-reply-replying-right {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0 16px 12px;
+    color: #536471;
+}
+
+.tweet-reply-replying-right p {
+    color: #00acee;
+    padding-left: 5px;
+}
+
+.tweet-reply-text-box {
+    padding: 0 16px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-reply-text-box--main {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+
+}
+
+.tweet-reply-text-box-main-avatar {
+    padding: 4px 0 0;
+    height: 130px;
+    width: 50px;
+}
+
+.tweet-reply-text-box--main-avatar img {
+    border-radius: 50%;
+}
+
+.tweet-reply-text-box-main-text {
+    padding: 12px;
+    width: 100%;
+    height: 130px;
+}
+
+.tweet-reply-text-box-main-text textarea {
+    padding: 2px 0;
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+}
+
+.tweet-reply-text-box-main-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-reply-text-box-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-reply-text-box-footer-btn {
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-reply-text-box-footer-btn button {
+    border: none;
+    background: #00acee;
+    border-radius: 25px;
+    padding: 10px 15px;
+    color: white;
+}
+

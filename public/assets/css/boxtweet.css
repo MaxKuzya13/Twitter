@@ -1,0 +1,374 @@
+.full-box {
+    position: relative;
+    color: black;
+    z-index: 1;
+}
+
+.full-box-without {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-box:hover, .tweet-box:hover~.top-line {
+    cursor: pointer;
+    background-color: var(--twitter-background);
+}
+
+.tweet-body, .tweet-left, .tweet-del {
+    padding: 10px 0;
+}
+
+.tweet-del {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-tweet_box {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-line {
+    height: 12px;
+    width: 100%;
+}
+
+.tweet-box  {
+    border-bottom: 1px solid var(--twitter-background);
+    display: flex;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.tweet-box-without {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.tweet-box-without-header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.tweet-box-without-left  {
+    width: 50px;
+    height: 50px;
+}
+
+.tweet-box-without-left a {
+    height: 50px;
+    width: 50px;
+}
+
+
+.tweet-box-without-left img{
+    border-radius: 50%;
+}
+
+.tweet-box-without-body {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tweet-box-without-body-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tweet-without-desc {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tweet-left {
+    width: 60px;
+}
+
+.tweet-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--twitter-background);
+}
+
+.tweet-body, .tweet-body-without {
+    padding-left: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.tweet-add {
+    border-bottom: 10px solid var(--twitter-background);
+}
+
+.tweet-header {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.tweet-header button {
+    border: none;
+    background: inherit;
+    padding-right: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tweet-header button:hover {
+    border-bottom: solid 1px #0f1419;
+}
+
+.tweet-name {
+    box-sizing: content-box;
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+    color: #0f1419;
+}
+
+.tweet-name:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #0f1419;
+}
+
+.tweet-username. .tweet-date {
+    color: rgb(101, 119, 134);
+    font-size: 15px;
+}
+
+.tweet-header p {
+    margin-right: 5px;
+}
+
+.tweet_desc {
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.tweet-files {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+
+.tweet-files img {
+    width: 100%;
+    height: 500px;
+}
+
+.date_box-without {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.date_box-without time {
+    font-size: 15px;
+    color: #536471;
+}
+
+.date_box-without span{
+    color: #0f1419;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.date_box-without p {
+    font-size: 14px;
+    color: #536471;
+}
+
+.info_box-without {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info_box-without div {
+    margin-right: 20px;
+    padding: 16px 0;
+    height: 100%;
+    width: 100px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.info_box-without div span {
+    color: #0f1419;
+    font-weight: 700;
+}
+
+.info_box-without div p {
+    color: #536471;
+    padding-left: 3px;
+}
+
+.icons {
+    width: 100%;
+    height: 30px;
+
+}
+
+.icons-wrapper-without {
+    height: 50px;
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--twitter-background);
+    border-bottom: 1px solid var(--twitter-background);
+}
+
+.icons-wrapper {
+    width: 85%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.icons-wrapper img {
+    width: 15px;
+    height: 15px;
+}
+
+.tweet-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icons-wrapper div, .icons-wrapper-without div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons-wrapper-without div {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.icons-wrapper-without div:hover {
+    border-radius: 50%;
+    background-color: pink;
+}
+
+.icons-wrapper div span, .icons-wrapper-without div span {
+    font-size: 13px;
+}
+
+.icons-wrapper div a, .icons-wrapper button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+}
+
+.icons-wrapper-without div a, .icons-wrapper-without button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+}
+
+.icons-wrapper-without i {
+    width: 23px;
+    height: 23px;
+}
+
+.icons-wrapper div a:hover, .icons-wrapper button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.reply_hover:hover ~ .reply_counter {
+    color: cadetblue;
+}
+
+.retweet_hover:hover ~ .retweet_counter {
+    color: green;
+}
+
+.like_hover:hover ~ .like_counter {
+    color: red;
+}
+
+.view_hover:hover ~ .view_counter {
+    color: aquamarine;
+}
+
+.icons-wrapper i{
+    color: #c6cacc;
+}
+
+.tweet__icons-wrapper {
+    display: flex;
+}
+
+.tweet__icons-add {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.button__tweet {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-right: 50px;
+    background: var(--twitter-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__tweet:focus {
+    background: #4cade9;
+}
+
+.tweet__icons-add i{
+    color: var(--twitter-color);
+    font-size: 23px;
+    margin-right: 15px;
+}

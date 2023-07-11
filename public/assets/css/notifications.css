@@ -1,0 +1,121 @@
+.notifications__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.notifications__swapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: solid 1px var(--twitter-background);
+}
+
+.notifications__swapper div{
+
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.notifications__swapper a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0f1419;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+}
+
+.notifications__swapper a:hover {
+    background-color: var(--twitter-background);
+    cursor: pointer;
+}
+
+.notifications__body-all-a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #0f1419;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.notifications__body-all-a:hover{
+    background-color: var(--twitter-background);
+    cursor: pointer;
+}
+
+.notifications__body-all {
+    margin-right: 12px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.notifications__body-all img{
+    width: 30px;
+    height: 30px;
+}
+
+.notifications__body span{
+    width: 100%;
+    font-size: 15px;
+}
+
+.notifications__body-verified {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 100px;
+    padding: 0 30px;
+}
+
+.notifications__body-verified img{
+    width: 340px;
+    height: 170px;
+}
+
+.notifications__body-verified h2{
+    font-size: 31px;
+    color: #0f1419;
+    margin: 0 0 8px;
+}
+
+.notifications__body-verified p{
+    font-size: 15px;
+    color: #536471;
+    margin: 0 0 28px;
+}
+
+.notifications__body-verified p a{
+    text-decoration: none;
+    color: #0f1419;
+    border-bottom: solid 1px #0f1419;
+}
+
+.notifications__body-mentions {
+    margin: 30px 100px;
+    padding: 0 30px;
+}
+
+.notifications__body-mentions h2 {
+    font-size: 31px;
+    color: #0f1419;
+    margin: 0 0 8px;
+}
+
+.notifications__body-mentions p {
+    font-size: 15px;
+    color: #536471;
+    margin: 0 0 28px;
+}

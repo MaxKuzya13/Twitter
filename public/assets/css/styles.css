@@ -1,0 +1,145 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body {
+    background-color: rgb(219, 217, 217);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 600px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 10px rgba(110, 110, 110, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-one {
+    width: 100%;
+    height: 50px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;;
+}
+
+.box-one i{
+    color: #00acee;
+    font-size: 1.2rem;
+}
+
+.box-one i a{
+    text-decoration: none;
+}
+
+.box-one button img{
+    margin: 0.5rem;
+}
+
+.row-one {
+    margin-left: 5px;
+
+}
+
+.row-two {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-two h1 {
+    margin-bottom: 20px;
+}
+
+.box-two button {
+    margin-bottom: 20px;
+}
+
+.box-two form {
+    margin: 20px;
+}
+
+
+.box-two, .box-two button{
+    display: flex;
+    align-items: center;
+}
+
+
+.box-two button {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 20px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.box-two input{
+    position: relative;
+    width: 300px;
+    height: 55px;
+    outline: none;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.box-two input label{
+    position: absolute;
+    top: 0;
+}
+
+.box-two input::placeholder{
+    font-size: 1rem;
+}
+
+.box-two input:focus{
+    border: 1px solid #00acee;
+}
+
+.box-two .next-btn{
+    background-color: #121212;
+    color: #fff;
+}
+
+.container p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(83, 100, 113);
+ }
+
+.container i a{
+    text-decoration: none;
+    color: #00acee;
+}

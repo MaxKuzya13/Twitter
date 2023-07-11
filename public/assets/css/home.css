@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import "boxtweet.css";
+@import "left-sidebar.css";
+@import "right-sidebar.css";
+
+:root {
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--twitter-background);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-twitter{
+    color: var(--twitter-color);
+    font-size: 30px!important;
+}
+
+.sidebar, .main {
+    border-right: 1px solid var(--twitter-background);
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.78fr 1.5fr 1.1fr;
+    grid-template-rows: 0.8fr 1.5fr 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "sidebar main right__sidebar ."
+    "sidebar main right__sidebar ."
+    "sidebar main right__sidebar .";
+}
+
+.sidebar {grid-area: sidebar;}
+.main {grid-area: main;}
+.right__sidebar {grid-area: right__sidebar;}
+
+.page__title {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--twitter-background);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.dropbtn {
+    color: #c6cacc;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown i, .dropdown-content span{
+    color: red;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.class_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover{
+    background-color: #e6e6e6;
+}
+
+
+@media screen and (max-width: 996px) {
+    .sidebar ul li{
+        text-align: center;
+        padding: 15px 10px;
+        display: block;
+    }
+    .sidebar ul li span, .sidebar__tweet, .right__sidebar{
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: 0.3fr 1.7fr;
+        max-width: 700px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "sidebar main .";
+    "sidebar main .";
+    }
+    .sidebar {grid-area: sidebar;}
+    .main{grid-area: main;}
+}

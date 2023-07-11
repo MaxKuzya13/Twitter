@@ -1,0 +1,28 @@
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    padding: 15px 60px;
+    color: #000;
+    font-weight: 700;
+    font-size: 19px;
+    align-items: center;
+    display: flex;
+}
+
+.sidebar ul li i {
+    font-size: 24px;
+    width: 25px;
+}
+
+.sidebar ul li span {
+    margin-left: 15px;
+}
+
+.active__menu i, .active__menu span {
+    color: var(--twitter-color);
+}

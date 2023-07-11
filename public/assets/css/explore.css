@@ -1,0 +1,159 @@
+.explore__main {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+
+.search__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+}
+
+.search__box {
+    margin: 3px 4px;
+    height: 40px;
+    width: 90%;
+    background-color: var(--twitter-background);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search__box a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(83, 100, 113);
+}
+
+.search__box a i{
+    padding-left: 12px;
+}
+
+.explore__main h2{
+    font-size: 20px;
+}
+
+.search__box input {
+    background: var(--twitter-background);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+}
+
+.search__settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.happen {
+    padding: 12px 0;
+}
+
+.explore__show-more-full {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.explore__show-more-full:hover {
+    background-color: var(--twitter-background);
+}
+
+.explore__show-more-full a{
+    text-decoration: none;
+    color: #00acee;
+}
+
+.explore__happening-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.explore__happening-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    height: 20px;
+    margin: 4px 0;
+}
+
+.explore__happening-header div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore__happening-header li
+{
+    display: flex;
+    align-self: center;
+    padding: 0 4px;
+    list-style: black;
+}
+
+.explore__happening-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore__happening-team-one {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    align-items: center;
+    height: 50px;
+}
+
+.explore__happening-team-two {
+    display: flex;
+    flex-direction: row;
+    background-color: powderblue;
+    align-items: center;
+    height: 50px;
+}
+
+.explore__happening-team-one img, .explore__happening-team-two img{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.explore__happening-team-one h3, .explore__happening-team-two h3{
+    color: white;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.explore__happening-team-one span, .explore__happening-team-two span{
+    width: 40px;
+    height: 30px;
+    padding-right: 10px;
+    font-size: 23px;
+    display: flex;
+    align-self: center;
+    color: white;
+}
+
+.trends__header-wrapper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
